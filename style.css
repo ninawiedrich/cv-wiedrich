@@ -1,12 +1,9 @@
 /* General Stylings */
 
-* *:before,
+*,
+*:before,
 *:after {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 * {
@@ -15,16 +12,57 @@ body {
 
 .title {
   font-family: "Montserrat Subrayada", sans-serif;
+  margin-bottom: 32px;
+  margin-right: 48px;
 }
 
+body {
+  margin: 0;
+}
+
+/* Specific Stylings */
+
 .header {
-  padding: 100px 16px;
+  padding: 48px 16px;
+  border-left: 72px;
   text-align: center;
   background-color: #efe4ac;
+}
+
+*.nav-link {
+  padding: 4px 16px;
+  color: #696969;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #fffacd;
+}
+
+.nav-link:active {
+  color: #ffd700;
+  background-color: #white;
 }
 
 .main {
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
+}
+
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-bottom: 2px solid #efe4ac;
+}
+
+.main > *:first-child {
+  margin-top: 48px;
+}
+
+.main > *:last-child {
+  border-bottom: none;
+  text-align: right;
 }
