@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-* {
+html {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+*::selection {
+  background-color: #fffacd;
+}
+
 /* Specific Stylings */
 
 .header {
@@ -27,6 +31,10 @@ body {
   border-left: 72px;
   text-align: center;
   background-color: #efe4ac;
+}
+
+.title::after {
+  content: "🔝😎💻🛫🌊🌎🌞";
 }
 
 *.nav-link {
@@ -65,4 +73,12 @@ body {
 .main > *:last-child {
   border-bottom: none;
   text-align: right;
+}
+
+.experience-heading {
+  display: inline-block;
+}
+
+.experience-subheading {
+  display: inline-block;
 }
