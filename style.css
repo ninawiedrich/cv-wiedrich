@@ -12,8 +12,10 @@ html {
 
 .title {
   font-family: "Montserrat Subrayada", sans-serif;
-  margin-bottom: 32px;
-  margin-right: 48px;
+  margin-top: 32px;
+  margin-bottom: 65px;
+  margin-right: 190px;
+  margin-left: 190px;
 }
 
 body {
@@ -28,13 +30,26 @@ body {
 
 .header {
   padding: 48px 16px;
+  padding-top: 72px;
   border-left: 72px;
   text-align: center;
   background-color: #efe4ac;
+  position: relative;
 }
 
 .title::after {
   content: "🔝😎💻🛫🌊🌎🌞";
+}
+
+.hire-me {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #fffacd;
+  color: #696969;
+  border: 2px solid #696969;
 }
 
 *.nav-link {
@@ -64,6 +79,7 @@ body {
 
 .main > * {
   border-bottom: 2px solid #efe4ac;
+  padding: 5px 24px;
 }
 
 .main > *:first-child {
@@ -81,4 +97,14 @@ body {
 
 .experience-subheading {
   display: inline-block;
+}
+
+.article-heading {
+  position: relative;
+  left: -45px;
+}
+
+.article-heading-contact {
+  position: relative;
+  left: 45px;
 }
