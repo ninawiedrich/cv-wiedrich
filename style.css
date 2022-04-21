@@ -8,14 +8,11 @@
 
 html {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 .title {
   font-family: "Montserrat Subrayada", sans-serif;
-  margin-top: 32px;
-  margin-bottom: 65px;
-  margin-right: 190px;
-  margin-left: 190px;
 }
 
 body {
@@ -29,12 +26,27 @@ body {
 /* Specific Stylings */
 
 .header {
-  padding: 48px 16px;
-  padding-top: 72px;
-  border-left: 72px;
+  padding: 0rem 1rem;
+  padding-top: 4.5rem;
   text-align: center;
   background-color: #efe4ac;
   position: relative;
+}
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+
+.title {
+  font-size: 0.4em;
+  margin-top: 2rem;
+  margin-bottom: 4.06rem;
+  margin-right: 11.87rem;
+  margin-left: 11.87rem;
 }
 
 .title::after {
@@ -43,17 +55,16 @@ body {
 
 .hire-me {
   position: absolute;
-  right: 30px;
-  top: 30px;
-  padding: 6px;
-  border-radius: 6px;
+  right: 1.87rem;
+  top: 1.87rem;
+  padding: 0.37rem;
   background: #fffacd;
   color: #696969;
-  border: 2px solid #696969;
+  border: 0.12rem solid #696969;
 }
 
 *.nav-link {
-  padding: 4px 16px;
+  padding: 0.25rem 1rem;
   color: #696969;
 }
 
@@ -68,22 +79,22 @@ body {
 }
 
 .main {
-  max-width: 800px;
+  max-width: 55ch;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .main > * + * {
-  margin-top: 48px;
+  margin-top: 1rem;
 }
 
 .main > * {
-  border-bottom: 2px solid #efe4ac;
-  padding: 5px 24px;
+  border-bottom: 0.12rem solid #efe4ac;
+  padding: 0.31rem 1.5rem;
 }
 
 .main > *:first-child {
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 .main > *:last-child {
@@ -101,10 +112,10 @@ body {
 
 .article-heading {
   position: relative;
-  left: -45px;
+  left: -2.81rem;
 }
 
 .article-heading-contact {
   position: relative;
-  left: 45px;
+  left: 2.81rem;
 }
