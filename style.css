@@ -94,7 +94,7 @@ body {
   padding: 0.37rem;
   background:  var(--gradient-color-2);
   color: var(--accent-text-color);
-  border: 0.12rem var(--gradient-color-2);
+  border: 0.12rem var(--accent-text-color) solid;
 }
 
 @media screen and (min-width: 992px) {
@@ -129,6 +129,8 @@ body {
 *.nav-link {
   padding: 0.25rem 1rem;
   color: var(--accent-text-color);
+  transition-property: background-color ease-in-out;
+  transition-duration: .25s;
 }
 
 .nav-link:hover {
@@ -139,6 +141,12 @@ body {
 .nav-link:active {
   color: var( --nav-link-text-active-color);
   background-color: var(--accent-color);
+}
+
+.nav-link:focus {
+  background-color: var(--accent-color);
+  outline-color: var(--accent-text-color);
+  outline-style: groove;
 }
 
 @media screen and (min-width: 768px) {
