@@ -29,11 +29,27 @@ html {
 }
 
 body {
+  --background-color: snow;
+  --text-color: black;
+  --gradient-color-1: #FFFFFF;
+  --gradient-color-2: #efe4ac;
+  --accent-color: #fffacd;
+  --accent-text-color: #696969;
+  --nav-link-text-active-color: #ffd700;
   margin: 0;
+    background-color: var(--background-color);
+  color: var(--text-color);
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  body{
+  --background-color: snow;
+  --text-color: black;
+  }
+  }
+
 *::selection {
-  background-color: #fffacd;
+  background-color: var(--accent-color);
 }
 
 /* Specific Stylings */
@@ -42,7 +58,7 @@ body {
   padding: 0rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-image: linear-gradient(180deg, #FFFFFF 10%, #efe4ac 90%);
+  background-image: linear-gradient(180deg, var(--gradient-color-1) 10%, var(--gradient-color-2) 90%);
   position: relative;
 }
 
@@ -53,7 +69,7 @@ body {
 .main-heading {
   font-size: 1em;
   color: transparent;
-  background-image: linear-gradient(0deg, #FFFFFF 10%, #efe4ac 90%);
+  background-image: linear-gradient(0deg, var(--gradient-color-1) 10%, var(--gradient-color-2) 90%);
   -webkit-text-stroke: 1px black;
   -webkit-background-clip: text;
     background-clip: text;
@@ -76,9 +92,9 @@ body {
   right: 1.87rem;
   top: 1.87rem;
   padding: 0.37rem;
-  background:  #efe4ac;
-  color: #696969;
-  border: 0.12rem solid #696969;
+  background:  var(--gradient-color-2);
+  color: var(--accent-text-color);
+  border: 0.12rem var(--gradient-color-2);
 }
 
 @media screen and (min-width: 992px) {
@@ -112,17 +128,17 @@ body {
 
 *.nav-link {
   padding: 0.25rem 1rem;
-  color: #696969;
+  color: var(--accent-text-color);
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: #fffacd;
+  color: vac(--text-color);
+  background-color: var(--accent-color);
 }
 
 .nav-link:active {
-  color: #ffd700;
-  background-color: #white;
+  color: var( --nav-link-text-active-color);
+  background-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -190,7 +206,7 @@ body {
   
   .footer {
   margin-top: 2rem;
-  background-color: #efe4ac;
+  background-color: var(--gradient-color-2);
   padding: 2rem;
 }
 
@@ -199,6 +215,10 @@ body {
   margin: 0;
 }
 
-.footer-link {
-  color: #696969;
+.footer-link,
+.footer-link:link,
+.footer-link:hover,
+.footer-link:active,
+.footer-link:visited {
+  color: var(--accent-text-color);
 }
