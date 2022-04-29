@@ -95,6 +95,17 @@ body {
   background:  var(--gradient-color-2);
   color: var(--accent-text-color);
   border: 0.12rem var(--accent-text-color) solid;
+  opacity: 0.5;
+}
+
+.header:hover .hire-me {
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.header:focus-within .hire-me {
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 992px) {
